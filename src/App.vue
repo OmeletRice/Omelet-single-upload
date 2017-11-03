@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+    <om-sigle-upload>
+    </om-sigle-upload>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
+import OmSigleUpload from './components/upload/index'
 export default {
   name: 'app',
+
   components: {
-    HelloWorld
+    OmSigleUpload
+  },
+
+  data() {
+    return {
+      access: ''
+    }
   }
 }
 </script>
